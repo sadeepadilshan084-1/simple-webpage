@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Todo & Reminders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="app">
+        <header class="header">
+            <h1>Todo & Reminders</h1>
+            <p class="sub">Simple, modern, offline-friendly</p>
+        </header>
+
+        <form id="task-form" class="task-form">
+            <input id="task-input" type="text" placeholder="What needs to be done?" required autocomplete="off">
+            <input id="due-input" type="datetime-local" aria-label="Due date (optional)">
+            <button type="submit" class="btn">Add</button>
+        </form>
+
+        <div class="controls">
+            <button id="clear-completed" class="btn ghost">Clear Completed</button>
+            <button id="clear-all" class="btn ghost">Clear All</button>
+        </div>
+
+        <ul id="tasks" class="tasks" aria-live="polite"></ul>
+
+        <footer class="footer">Built with ❤️ — Notifications use the browser Notification API</footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
