@@ -18,3 +18,20 @@ Notes
 
 Want more?
 - I can add sound alerts, edit tasks, or persist to a backend. Tell me which next.
+
+Docker
+------
+
+Build the Docker image (from project root):
+
+```bash
+docker build -t todo-reminders:latest .
+```
+
+Run the container:
+
+```bash
+docker run --rm -p 8080:80 todo-reminders:latest
+```
+
+Then open http://localhost:8080 in your browser.
